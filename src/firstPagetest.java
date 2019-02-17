@@ -9,6 +9,7 @@ public class firstPagetest {
     {
         System.out.println ("Hello World \n");
         System.out.println ("Hello Tamil \n");
+        System.out.println ("Hello Great \n");
         LocalDateTime current = LocalDateTime.now();
         System.out.println("Current Date and Time is: " + current);
     }
