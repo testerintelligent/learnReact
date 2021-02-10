@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('cleanup') {
           steps {
-            echo 'Cleanup Completed'
+            echo 'Cleanup Completed Stage'
           }
         }
 
