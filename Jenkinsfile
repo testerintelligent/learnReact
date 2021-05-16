@@ -1,14 +1,12 @@
 pipeline {
   agent any
 
-script 
-{
-public int i = 10;
-
-}
-
   stages {
     stage('cleanup') {
+      environemnt
+      {
+          ini i = 10;
+      }
       parallel {
         stage('cleanup') {
           steps {
@@ -20,6 +18,7 @@ public int i = 10;
         stage('printMessage') {
           steps {
             echo 'parallel Step Execution'
+            echo "${env.i}"
           }
         }
 
