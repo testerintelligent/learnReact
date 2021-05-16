@@ -1,11 +1,19 @@
 pipeline {
   agent any
+
+script 
+{
+public int i = 10;
+
+}
+
   stages {
     stage('cleanup') {
       parallel {
         stage('cleanup') {
           steps {
             echo 'Cleanup Completed Stage'
+            print i;
           }
         }
 
